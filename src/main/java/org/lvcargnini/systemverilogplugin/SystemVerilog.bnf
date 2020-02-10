@@ -1,0 +1,25 @@
+{
+  parserClass="com.velodyne.systemverilogplugin.parser.SystemVerilogParser"
+  parserUtilClass="com.velodyne.systemverilogplugin.parser.SystemVerilogParserUtil"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="SystemVerilog"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.velodyne.systemverilogplugin.psi"
+  psiImplPackage="com.velodyne.systemverilogplugin.psi.impl"
+
+  elementTypeHolderClass="com.velodyne.systemverilogplugin.psi.SystemVerilogTypes"
+  elementTypeClass="com.velodyne.systemverilogplugin.psi.SystemVerilogElementType"
+  tokenTypeClass="com.velodyne.systemverilogplugin.psi.SystemVerilogTokenType"
+
+  psiImplUtilClass="com.velodyne.systemverilogplugin.psi.impl.SystemVerilogPsiImplUtil"
+
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY {mixin="com.velodyne.systemverilogplugin.psi.impl.SystemVerilogNamedElementImpl"
+  implements="com.velodyne.systemverilogplugin.psi.SystemVerilogNamedElementImpl" methods=[getKey getValue getName setName getNameIdentifier]}
