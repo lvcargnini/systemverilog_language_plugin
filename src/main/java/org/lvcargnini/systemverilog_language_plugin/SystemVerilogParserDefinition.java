@@ -1,11 +1,11 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 import com.intellij.lang.*;
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
 import com.intellij.psi.tree.*;
-import org.lvcargnini.systemverilogplugin.parser.SystemVerilogParser;
-import org.lvcargnini.systemverilogplugin.psi.*;
+import org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParser;
+import org.lvcargnini.systemverilog_language_plugin.psi.*;
 import org.jetbrains.annotations.NotNull;
 
 public class SystemVerilogParserDefinition implements ParserDefinition {

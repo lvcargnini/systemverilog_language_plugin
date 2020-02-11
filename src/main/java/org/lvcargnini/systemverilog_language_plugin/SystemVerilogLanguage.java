@@ -1,4 +1,4 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.lang.Language;
 

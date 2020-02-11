@@ -1,7 +1,7 @@
-package org.lvcargnini.systemverilogplugin.psi;
+package org.lvcargnini.systemverilog_language_plugin.psi;
 
 import com.intellij.psi.tree.IElementType;
-import org.lvcargnini.systemverilogplugin.SystemVerilogLanguage;
+import org.lvcargnini.systemverilog_language_plugin.SystemVerilogLanguage;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 

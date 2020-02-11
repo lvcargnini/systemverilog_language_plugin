@@ -1,11 +1,11 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.codeInsight.daemon.*;
 import com.intellij.codeInsight.navigation.NavigationGutterIconBuilder;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
 import com.intellij.psi.impl.source.tree.java.PsiJavaTokenImpl;
-import org.lvcargnini.systemverilogplugin.psi.SystemVerilogProperty;
+import org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogProperty;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;

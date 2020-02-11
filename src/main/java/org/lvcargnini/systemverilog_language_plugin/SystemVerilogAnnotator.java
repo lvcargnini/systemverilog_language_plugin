@@ -1,11 +1,11 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.lang.annotation.*;
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.*;
-import org.lvcargnini.systemverilogplugin.psi.SystemVerilogProperty;
+import org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogProperty;
 
 import org.jetbrains.annotations.NotNull;
 

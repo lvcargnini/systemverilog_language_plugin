@@ -1,8 +1,8 @@
-package org.lvcargnini.systemverilogplugin.psi;
+package org.lvcargnini.systemverilog_language_plugin.psi;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
-import org.lvcargnini.systemverilogplugin.SystemVerilogFileType;
+import org.lvcargnini.systemverilog_language_plugin.SystemVerilogFileType;
 
 public class SystemVerilogElementFactory {
     public static SystemVerilogProperty createProperty(Project project, String name) {

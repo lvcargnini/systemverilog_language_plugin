@@ -1,10 +1,10 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
 import com.intellij.openapi.options.colors.*;
 import org.jetbrains.annotations.*;
-import org.lvcargnini.systemverilogplugin.*;
+
 import javax.swing.*;
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.*;
@@ -6,7 +6,7 @@ import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IElementType;
-import org.lvcargnini.systemverilogplugin.psi.SystemVerilogTypes;
+import org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogTypes;
 import org.jetbrains.annotations.NotNull;
 
 import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;

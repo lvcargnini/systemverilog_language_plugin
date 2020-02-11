@@ -1,9 +1,9 @@
-package org.lvcargnini.systemverilogplugin.psi;
+package org.lvcargnini.systemverilog_language_plugin.psi;
 
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import org.lvcargnini.systemverilogplugin.*;
+import org.lvcargnini.systemverilog_language_plugin.*;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

@@ -1,12 +1,12 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiManager;
 import com.intellij.psi.search.*;
 import com.intellij.psi.util.PsiTreeUtil;
-import com.intellij.util.indexing.FileBasedIndex;
-import org.lvcargnini.systemverilogplugin.psi.*;
+import org.lvcargnini.systemverilog_language_plugin.psi.*;
+
 
 import java.util.*;
 

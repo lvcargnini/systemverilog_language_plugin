@@ -1,10 +1,10 @@
-package org.lvcargnini.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.codeInsight.lookup.*;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.*;
-import org.lvcargnini.systemverilogplugin.psi.SystemVerilogProperty;
+import org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogProperty;
 import org.jetbrains.annotations.*;
 
 import java.util.*;
