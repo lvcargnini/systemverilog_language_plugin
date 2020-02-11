@@ -1,8 +1,7 @@
 {
   parserClass="org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParser"
-  parserUtilClass="org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParserUtil"
-
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+  parserUtilClass="org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParserUtil"
 
   psiClassPrefix="SystemVerilog"
   psiImplClassSuffix="Impl"
