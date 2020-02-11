@@ -1,8 +1,8 @@
-package com.velodyne.systemverilogplugin;
+package org.lvcargnini.systemverilog_language_plugin;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-import com.velodyne.systemverilogplugin.psi.SystemVerilogTypes;
+import org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogTypes;
 import com.intellij.psi.TokenType;
 
 %%
