@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>org.lvcargnini.systemverilog_language_plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>SystemVerilog Language Support</name>
+    <vendor email="lvcargnini@gmail.com" url="https://github.com/lvcargnini/systemverilog_language_plugin">systemverilog_language_plugin</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    Systemverilog Language Support </br>
+    IEEE Std 1800™-2017 (Revision of IEEE Std 1800-2012) </br>
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -13,7 +13,18 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <fileType name="SystemVerilog File" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFileType" fieldName="INSTANCE"
+                  language="SystemVerilog" extensions="sv"/>
+<!--        <syntaxHighlighter key=""-->
+<!--                           implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogSyntaxHighlighter"/>-->
+        <lang.parserDefinition language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogColorSettingsPage"/>
+        <annotator language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogAnnotator"/>
+        <completion.contributor language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
+        <completion.contributor language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
+        <psi.referenceContributor implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogReferenceContributor"/>
+        <lang.refactoringSupport language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogRefactoringSupportProvider"/>
     </extensions>
 
     <actions>
