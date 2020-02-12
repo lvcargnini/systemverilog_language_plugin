@@ -6,6 +6,8 @@ import com.intellij.psi.*;
 import org.lvcargnini.systemverilog_language_plugin.SystemVerilogIcons;
 import org.lvcargnini.systemverilog_language_plugin.psi.*;
 import org.jetbrains.annotations.Nullable;
+import com.intellij.psi.impl.source.tree.java.PsiJavaTokenImpl;
+
 
 import javax.swing.*;
 

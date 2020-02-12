@@ -10,6 +10,6 @@ public class SystemVerilogSyntaxHighlighterFactory  extends SyntaxHighlighterFac
     @NotNull
     @Override
     public SyntaxHighlighter getSyntaxHighlighter(Project project, VirtualFile virtualFile) {
-        return new SystemVerilogSyntaxHighLighter();
+        return new SystemVerilogSyntaxHighLigther();
     }
 }

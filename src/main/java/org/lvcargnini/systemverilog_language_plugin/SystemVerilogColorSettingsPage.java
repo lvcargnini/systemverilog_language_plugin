@@ -11,9 +11,9 @@ import java.util.Map;
 
 public class SystemVerilogColorSettingsPage implements ColorSettingsPage {
     private static final AttributesDescriptor[] DESCRIPTORS = new AttributesDescriptor[]{
-            new AttributesDescriptor("Key", SystemVerilogSyntaxHighLighter.KEY),
-            new AttributesDescriptor("Separator", SystemVerilogSyntaxHighLighter.SEPARATOR),
-            new AttributesDescriptor("Value", SystemVerilogSyntaxHighLighter.VALUE),
+            new AttributesDescriptor("Key", SystemVerilogSyntaxHighLigther.KEY),
+            new AttributesDescriptor("Separator", SystemVerilogSyntaxHighLigther.SEPARATOR),
+            new AttributesDescriptor("Value", SystemVerilogSyntaxHighLigther.VALUE),
     };
 
     @Nullable
@@ -25,7 +25,7 @@ public class SystemVerilogColorSettingsPage implements ColorSettingsPage {
     @NotNull
     @Override
     public SyntaxHighlighter getHighlighter() {
-        return new SystemVerilogSyntaxHighLighter();
+        return new SystemVerilogSyntaxHighLigther();
     }
 
     @NotNull

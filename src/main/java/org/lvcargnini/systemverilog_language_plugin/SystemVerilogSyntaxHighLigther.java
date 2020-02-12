@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAttributesKey;
 
-public class SystemVerilogSyntaxHighLighter extends SyntaxHighlighterBase {
+public class SystemVerilogSyntaxHighLigther extends SyntaxHighlighterBase {
     public static final TextAttributesKey SEPARATOR =
             createTextAttributesKey("SIMPLE_SEPARATOR", DefaultLanguageHighlighterColors.OPERATION_SIGN);
     public static final TextAttributesKey KEY =
@@ -33,6 +33,7 @@ public class SystemVerilogSyntaxHighLighter extends SyntaxHighlighterBase {
     @NotNull
     @Override
     public Lexer getHighlightingLexer() {
+
         return new SystemVerilogLexerAdapter();
     }
 
