@@ -8,6 +8,8 @@ version '1.0.0'
 
 sourceCompatibility = 1.8
 
+sourceSets.main.java.srcDirs = ['src/main/gen', 'src/main/java']
+
 repositories {
     mavenCentral()
 }
@@ -19,6 +21,7 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2019.3.2'
+    plugins 'java'
 }
 patchPluginXml {
     changeNotes """
