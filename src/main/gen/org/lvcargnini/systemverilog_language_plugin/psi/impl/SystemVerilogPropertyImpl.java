@@ -9,6 +9,7 @@ import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogTypes.*;
 import org.lvcargnini.systemverilog_language_plugin.psi.*;
+import com.intellij.navigation.ItemPresentation;
 
 public class SystemVerilogPropertyImpl extends SystemVerilogNamedElementImpl implements SystemVerilogProperty {
 
@@ -48,6 +49,11 @@ public class SystemVerilogPropertyImpl extends SystemVerilogNamedElementImpl imp
   @Override
   public PsiElement getNameIdentifier() {
     return SystemVerilogPsiImplUtil.getNameIdentifier(this);
+  }
+
+  @Override
+  public ItemPresentation getPresentation() {
+    return SystemVerilogPsiImplUtil.getPresentation(this);
   }
 
 }

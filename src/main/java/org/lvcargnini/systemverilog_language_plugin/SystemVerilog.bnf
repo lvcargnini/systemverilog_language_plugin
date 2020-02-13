@@ -1,7 +1,6 @@
 {
   parserClass="org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParser"
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
-  parserUtilClass="org.lvcargnini.systemverilog_language_plugin.parser.SystemVerilogParserUtil"
 
   psiClassPrefix="SystemVerilog"
   psiImplClassSuffix="Impl"
@@ -21,4 +20,4 @@ svFile::= item_*
 private item_ ::= (property|COMMENT|CRLF)
 
 property ::= (KEY? SEPARATOR VALUE?) | KEY {mixin="org.lvcargnini.systemverilog_language_plugin.psi.impl.SystemVerilogNamedElementImpl"
-  implements="org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogNamedElement" methods=[getKey getValue getName setName getNameIdentifier]}
+  implements="org.lvcargnini.systemverilog_language_plugin.psi.SystemVerilogNamedElement" methods=[getKey getValue getName setName getNameIdentifier getPresentation]}

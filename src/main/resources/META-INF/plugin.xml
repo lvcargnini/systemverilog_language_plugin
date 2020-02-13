@@ -29,6 +29,9 @@
         <lang.findUsagesProvider language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFindUsagesProvider"/>
         <lang.foldingBuilder language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
         <lang.foldingBuilder language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
+        <gotoSymbolContributor implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogChooseByNameContributor"/>
+        <lang.psiStructureViewFactory language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogStructureViewFactory"/>
+
 
     </extensions>
 

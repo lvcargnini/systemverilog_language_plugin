@@ -58,4 +58,26 @@ public class SystemVerilogPsiImplUtil {
     }
 
     // ...
+    public static ItemPresentation getPresentation(final SystemVerilogProperty element) {
+        return new ItemPresentation() {
+            @Nullable
+            @Override
+            public String getPresentableText() {
+                return element.getKey();
+            }
+
+            @Nullable
+            @Override
+            public String getLocationString() {
+                return element.getContainingFile().getName();
+            }
+
+            @Nullable
+            @Override
+            public Icon getIcon(boolean unused) {
+                return SystemVerilogIcons.FILE;
+            }
+        };
+    }
+
 }

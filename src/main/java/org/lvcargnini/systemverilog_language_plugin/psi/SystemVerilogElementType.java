@@ -4,7 +4,6 @@ import org.lvcargnini.systemverilog_language_plugin.SystemVerilogLanguage;
 import org.jetbrains.annotations.*;
 
 
-
 public class SystemVerilogElementType  extends IElementType {
 
 
