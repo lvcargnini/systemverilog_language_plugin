@@ -14,24 +14,26 @@
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileType name="SystemVerilog File" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFileType" fieldName="INSTANCE"
-                  language="SystemVerilog" extensions="sv"/>
+        <fileType                       name="SystemVerilog File" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFileType"
+                                        fieldName="INSTANCE"
+                                        language="SystemVerilog"
+                                        extensions="sv;svh;v;vh"/>
 <!--        <syntaxHighlighter key=""-->
 <!--                           implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogSyntaxHighlighter"/>-->
-        <lang.parserDefinition language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogParserDefinition"/>
-        <lang.syntaxHighlighterFactory language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogSyntaxHighlighterFactory"/>
-        <colorSettingsPage implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogColorSettingsPage"/>
-        <annotator language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogAnnotator"/>
-        <completion.contributor language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
-        <completion.contributor language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
-        <psi.referenceContributor implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogReferenceContributor"/>
-        <lang.refactoringSupport language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogRefactoringSupportProvider"/>
-        <lang.findUsagesProvider language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFindUsagesProvider"/>
-        <lang.foldingBuilder language="JAVA" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
-        <lang.foldingBuilder language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
-        <gotoSymbolContributor implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogChooseByNameContributor"/>
-        <lang.psiStructureViewFactory language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogStructureViewFactory"/>
-
+        <lang.parserDefinition          language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogParserDefinition"/>
+        <lang.syntaxHighlighterFactory  language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogSyntaxHighlighterFactory"/>
+        <colorSettingsPage                                       implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogColorSettingsPage"/>
+        <annotator                      language="JAVA"          implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogAnnotator"/>
+        <completion.contributor         language="JAVA"          implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
+        <completion.contributor         language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCompletionContributor"/>
+        <psi.referenceContributor                                implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogReferenceContributor"/>
+        <lang.refactoringSupport        language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogRefactoringSupportProvider"/>
+        <lang.findUsagesProvider        language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFindUsagesProvider"/>
+        <lang.foldingBuilder            language="JAVA"          implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
+        <lang.foldingBuilder            language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFoldingBuilder"/>
+        <gotoSymbolContributor                                   implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogChooseByNameContributor"/>
+        <lang.psiStructureViewFactory   language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogStructureViewFactory"/>
+        <lang.formatter                 language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFormattingModelBuilder"/>
 
     </extensions>
 
