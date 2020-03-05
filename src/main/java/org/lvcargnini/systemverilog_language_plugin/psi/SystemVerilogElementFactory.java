@@ -15,4 +15,14 @@ public class SystemVerilogElementFactory {
         return (SystemVerilogFile) PsiFileFactory.getInstance(project).
                 createFileFromText(name, SystemVerilogFileType.INSTANCE, text);
     }
+    public static SystemVerilogProperty createProperty(Project project, String name, String value) {
+        final SystemVerilogFile file = createFile(project, name + " = " + value);
+        return (SystemVerilogProperty) file.getFirstChild();
+    }
+
+    public static PsiElement createCRLF(Project project) {
+        final SystemVerilogFile file = createFile(project, "\n");
+        return file.getFirstChild();
+    }
+
 }

@@ -34,6 +34,9 @@
         <gotoSymbolContributor                                   implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogChooseByNameContributor"/>
         <lang.psiStructureViewFactory   language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogStructureViewFactory"/>
         <lang.formatter                 language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogFormattingModelBuilder"/>
+        <codeStyleSettingsProvider                               implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCodeStyleSettingsProvider"/>
+        <langCodeStyleSettingsProvider                           implementation="org.lvcargnini.systemverilog_language_plugin.SystemVerilogLanguageCodeStyleSettingsProvider"/>
+        <lang.commenter                 language="SystemVerilog" implementationClass="org.lvcargnini.systemverilog_language_plugin.SystemVerilogCommenter"/>
 
     </extensions>
 
